@@ -71,6 +71,10 @@ navs:
     href: /bookmark
     label: Bookmark
 
+  -
+    href: /about
+    label: About
+
 
 
 # Sidebar to show popular repo

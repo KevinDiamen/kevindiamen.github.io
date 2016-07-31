@@ -1,7 +1,8 @@
 ---
 layout: post
-title: array_splice
-tags: [php]
+title: AIDL 学习笔记
+category: android
+tags: [android]
 ---
 
     array array_splice ( array &$input , int $offset int $length = 0 bool $preserve_keys ] ) 有四个参数 第一个是输入数组，第二个是偏移量 ，第三个是截取长度默认是input的长度, 第四个是bool代表返回的数组是否保留之前的key

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP源码分析
+title: PHP源码分析array_splic()
 category: php
 tags: [php]
 ---

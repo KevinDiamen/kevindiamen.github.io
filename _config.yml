@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Do it now. Sometimes "later" becomes "never"！ # ex. I m Chuan
-name: CHENGSHUAI # ex. DONGChuan
+title: Stay Hungry, Stay Foolish # ex. I m Chuan
+name: Kevin.帅 # ex. DONGChuan
 email: cheng_shuai@icloud.com
 location: BEIJING # ex. Nice, France
 company: MyCompany
@@ -88,7 +88,6 @@ analytics :
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, C, C++, PHP, Python, MySQL, SQLite, Design Patterns]
-skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
-skill_mobile_app_keywords: [Android, Sketch UI Desgin]
+skill_software_keywords: [Java, C, C++, PHP, Python, MySQL, Design Patterns]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, MongoDB, Redis, PHP, Boostrap]
+skill_mobile_app_keywords: [iOS]

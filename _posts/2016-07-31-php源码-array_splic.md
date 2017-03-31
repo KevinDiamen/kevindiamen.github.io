@@ -9,10 +9,10 @@ tags: [php]
 
 ### PHP_array_splic()
 
-    array array_splice ( array &$input , int $offset int $length = 0 bool $preserve_keys ] ) 有四个参数 第一个是输入数组，第二个是偏移量 ，第三个是截取长度默认是input的长度, 第四个是bool代表返回的数组是否保留之前的key
+array array_splice ( array &$input , int $offset int $length = 0 bool $preserve_keys ] ) 有四个参数 第一个是输入数组，第二个是偏移量 ，第三个是截取长度默认是input的长度, 第四个是bool代表返回的数组是否保留之前的key
 
-
-    PHP_FUNCTION(array_slice)
+```
+ PHP_FUNCTION(array_slice)
     {
     zval     *input,        /* 输入的数组 */
         **z_length = NULL, /* 数组长度 */ 
@@ -95,6 +95,7 @@ tags: [php]
     zend_hash_move_forward_ex(Z_ARRVAL_P(input), &hpos);
     }
     }
+```
 
 ##### 下面是用PHP翻译过来的
 

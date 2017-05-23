@@ -54,6 +54,11 @@ php5.6 Hashtable 实现
 - nApplyCount，保存当前bucket被递归访问的次数，防止多次递归
 - bApplyProtection，标识哈希表是否要使用递归保护，默认是1，要使用
 
+C 语言数组内存上是连续的我们可以用下标访问，C 语言的key必须是integers 但是必须连续，举个例子，如果key 0,1,2 下一个key必须是3. 但是PHP 不同的它支持 string类型的key，并且内存也不是连续的.
 
+用C语言实现PHP这样的结构有两种方法一种二叉查找树，他的查询时间复杂度是 O(logn)，还有一种是 hashtable 他的查询时间复杂度是O(1),PHP 数组 就是用hashtable来实现。
+hashtable 会有冲突 在PHP中使用链表来解决冲突如下图
+
+![pic](http://www.phpinternalsbook.com/_images/basic_hashtable.svg)
 
 

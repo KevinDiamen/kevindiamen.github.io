@@ -61,4 +61,30 @@ hashtable 会有冲突 在PHP中使用链表来解决冲突如下图
 
 ![pic](http://www.phpinternalsbook.com/_images/basic_hashtable.svg)
 
+arBuckets 是HashTable 存储Bucket数组的头指针
 
+我们如果要删除一个元素 假如这个bucket指针存储的是‘C’ 想要去删除他，你需要将a的pNext设置为NULL
+
+<img src="http://www.phpinternalsbook.com/_images/doubly_linked_hashtable.svg" width="250px" h alt="图片名称"/>
+
+![pic](http://www.phpinternalsbook.com/_images/doubly_linked_hashtable.svg =100)
+
+*****
+
+#### HashTable 的 Bucket 
+
+Bucket 是 HashTable 非常重要的一个结构，可以在 `zend_hash.h` 文件中找到, 我们看一下 Bucket的结构：
+
+```
+typedef struct bucket {
+    ulong h;
+    uint nKeyLength;
+    void *pData;
+    void *pDataPtr;
+    struct bucket *pListNext;
+    struct bucket *pListLast;
+    struct bucket *pNext;
+    struct bucket *pLast;
+    char *arKey;
+} Bucket;
+```

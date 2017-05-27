@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP内核HASHTABLE
+title: PHP内核HashTable
 category: PHP
 tags: [PHP]
 ---

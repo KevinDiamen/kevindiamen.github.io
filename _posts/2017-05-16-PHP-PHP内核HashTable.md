@@ -17,7 +17,7 @@ tags: [PHP]
 的内部实现和区别
 
 
-### 一致性哈希算法
+### PHP Hashtable 实现
 php5.6 Hashtable 实现
 
 ```
@@ -59,15 +59,13 @@ C 语言数组内存上是连续的我们可以用下标访问，C 语言的key�
 用C语言实现PHP这样的结构有两种方法一种二叉查找树，他的查询时间复杂度是 O(logn)，还有一种是 hashtable 他的查询时间复杂度是O(1),PHP 数组 就是用hashtable来实现。
 hashtable 会有冲突 在PHP中使用链表来解决冲突如下图
 
-![pic](http://www.phpinternalsbook.com/_images/basic_hashtable.svg)
+<img src="http://www.phpinternalsbook.com/_images/basic_hashtable.svg" width="360px" h alt="图片名称"/>
 
 arBuckets 是HashTable 存储Bucket数组的头指针
 
 我们如果要删除一个元素 假如这个bucket指针存储的是‘C’ 想要去删除他，你需要将a的pNext设置为NULL
 
-<img src="http://www.phpinternalsbook.com/_images/doubly_linked_hashtable.svg" width="250px" h alt="图片名称"/>
-
-![pic](http://www.phpinternalsbook.com/_images/doubly_linked_hashtable.svg =100)
+<img src="http://www.phpinternalsbook.com/_images/doubly_linked_hashtable.svg" width="360px" h alt="图片名称"/>
 
 *****
 

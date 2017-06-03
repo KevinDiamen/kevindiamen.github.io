@@ -86,3 +86,6 @@ typedef struct bucket {
     char *arKey;
 } Bucket;
 ```
+
+>  - `h` 是 hash 的 key , 如果 key 是一个 `integer` 那么`nKeyLength` 将会为0，如果 key 是一个 string, `nKeyLength` 等于 `arKey` 字符串的长度
+>  - pData 是存储数据的指针

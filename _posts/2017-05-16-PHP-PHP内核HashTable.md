@@ -8,7 +8,7 @@ tags: [PHP]
 # PHP内核HashTable
 
 - [介绍](#introduction)
-- [安装](#installation)
+- [PHP Hashtable 实现](#installation)
 
 <a name="introduction"></a>
 ## 介绍
